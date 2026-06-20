@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrammarQuest — Aprende Gramática Inglesa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="top-bar">
+        <div class="bar-logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>GrammarQuest</span>
+        </div>
+        <div class="bar-stats">
+            <div class="stat-item stat-streak" title="Racha">
+                <i class="fas fa-fire"></i>
+                <span id="header-streak">0</span>
+            </div>
+            <div class="stat-item stat-xp" title="Puntos de experiencia">
+                <i class="fas fa-star"></i>
+                <span id="header-xp">0</span>
+            </div>
+            <div class="stat-item stat-hearts" title="Corazones">
+                <i class="fas fa-heart"></i>
+                <span id="header-hearts">5</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <main id="home-screen">
+        <div class="welcome-box">
+            <h1>Domina la gramática inglesa</h1>
+            <p>Avanza por el camino y conquista cada regla gramatical paso a paso.</p>
+        </div>
+        <div id="skill-tree" class="skill-tree"></div>
+    </main>
+
+    <!-- Intro lección -->
+    <main id="intro-screen" class="hidden"></main>
+
+    <!-- Lección -->
+    <main id="lesson-screen" class="hidden">
+        <div class="progress-container">
+            <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+        </div>
+        <div id="question-container" class="question-container"></div>
+    </main>
+    <div id="lesson-bottom" class="lesson-bottom hidden">
+        <button id="check-btn" class="btn-duo btn-primary btn-full" disabled>COMPROBAR</button>
+    </div>
+
+    <!-- Resultados -->
+    <main id="results-screen" class="hidden"></main>
+
+    <!-- Modal -->
+    <div id="modal-overlay" class="modal-overlay hidden"></div>
+
+    <!-- Confetti -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
